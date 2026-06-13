@@ -146,3 +146,19 @@ async def voice(request: Request):
     response.append(gather)
 
     return Response(content=str(response), media_type="application/xml")
+from twilio.rest import Client
+
+@app.get("/call_me")
+def call_me():
+    account_sid = "YOUR_ACCOUNT_SID"
+    auth_token = "YOUR_AUTH_TOKEN"
+
+    client = Client(account_sid, auth_token)
+
+    call = client.calls.create(
+        to="+919866704458",   # YOUR mobile number
+        from_="+19452454328", # YOUR Twilio number
+        url="https://ai-voice-agent-b6ms.onrender.com/voice"
+    )
+
+    return {"status": "calling"}

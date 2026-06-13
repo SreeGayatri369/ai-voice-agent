@@ -100,8 +100,8 @@ async def voice(request: Request):
 @app.get("/call_me")
 def call_me():
     try:
-        account_sid = os.getenv("ACCOUNT_SID")
-        auth_token = os.getenv("AUTH_TOKEN")
+        account_sid = "AC9512f01f604b0f3da9cadb70bdbc61d6"
+        auth_token = "a8e6ca21478f363420d997f042c7216c"
 
         client = Client(account_sid, auth_token)
 

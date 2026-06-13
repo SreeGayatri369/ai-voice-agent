@@ -150,8 +150,8 @@ from twilio.rest import Client
 
 @app.get("/call_me")
 def call_me():
-    account_sid = "YOUR_ACCOUNT_SID"
-    auth_token = "YOUR_AUTH_TOKEN"
+    account_sid = "AC9512f01f604b0f3da9cadb70bdbc61d6"
+    auth_token = "a8e6ca21478f363420d997f042c7216c"
 
     client = Client(account_sid, auth_token)
 

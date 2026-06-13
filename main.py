@@ -101,7 +101,7 @@ async def voice(request: Request):
 def call_me():
     try:
         account_sid = "AC9512f01f604b0f3da9cadb70bdbc61d6"
-        auth_token = "a8e6ca21478f363420d997f042c7216c"
+        auth_token = "1d7fb4c63c6f7d5543eafa0aa8f7a9bd"
 
         client = Client(account_sid, auth_token)
 
